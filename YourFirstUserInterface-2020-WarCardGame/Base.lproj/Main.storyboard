@@ -41,7 +41,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kEt-2D-KDX" userLabel="Cards">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="170"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card6" translatesAutoresizingMaskIntoConstraints="NO" id="CXt-Uh-EVJ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card14" translatesAutoresizingMaskIntoConstraints="NO" id="CXt-Uh-EVJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card10" translatesAutoresizingMaskIntoConstraints="NO" id="egy-MS-4AI">
@@ -52,6 +52,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNo-Gt-1Yi" userLabel="Deal Button">
                                         <rect key="frame" x="94.333333333333343" y="199.99999999999994" width="81.666666666666657" height="31"/>
                                         <state key="normal" image="dealbutton"/>
+                                        <connections>
+                                            <action selector="dealTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nrM-Cx-kvq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -109,6 +112,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="leftImageView" destination="CXt-Uh-EVJ" id="96L-Bg-e8D"/>
+                        <outlet property="leftScoreLabel" destination="vsi-hF-cjD" id="HRE-GF-W3Q"/>
+                        <outlet property="rightImageView" destination="egy-MS-4AI" id="vCL-kb-9vM"/>
+                        <outlet property="rightScoreLabel" destination="MFT-WS-xGi" id="BHF-ld-4uP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,7 +127,7 @@
     <resources>
         <image name="background" width="414" height="896"/>
         <image name="card10" width="120" height="170"/>
-        <image name="card6" width="120" height="170"/>
+        <image name="card14" width="120" height="170"/>
         <image name="dealbutton" width="81.666664123535156" height="31"/>
         <image name="logo" width="122" height="67"/>
     </resources>
